@@ -1,0 +1,35 @@
+# Archivos del sistema de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos temporales
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Configuración de Finder
+Icon?
+
+# Miniaturas
+.DocumentRevisions-V100
+
+# Archivos de red
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Archivos de Xcode (opcional)
+DerivedData/
+*.xcworkspace
+xcuserdata/
+
+# Archivos de logs
+*.log
+
+# Archivos temporales generales
+*.tmp
+*.swp
