@@ -1,0 +1,25 @@
+Del curso: Headless WordPress - Astro WP REST API Tailwind TypeScript
+Aprendiendo Astro y Headless WordPress desde Cero con Proyectos, inc. Actions, Server Endpoints, Autenticación, React y Vue
+
+Coffee Shop Astro: El Frontmatter de Astro y pasar variables hacia el HTML
+
+
+
+2:38
+Pages o Páginas en Astro y routing
+4:16
+Añadiendo Tailwind al Proyecto
+3:56
+Layouts en Astro
+7:17
+Componentes en Astro
+5:00
+Props en Componentes
+4:15
+Añadiendo Interfaces a Props para mejor DX
+7:04
+Assets y Public ¿Donde colocar las imágenes en Astro?
+5:27
+El Componente Image de Astro
+5:34
+El Componente Picture de Astro
