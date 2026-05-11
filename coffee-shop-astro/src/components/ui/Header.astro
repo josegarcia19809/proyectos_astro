@@ -1,6 +1,10 @@
 ---
-console.log(Astro.props)
+interface Props{
+    usuario: string
+}
+const {usuario}= Astro.props
 ---
 <header>
     <h1>Header</h1>
+    <p>Hola {usuario.toUpperCase()}</p>
 </header>
