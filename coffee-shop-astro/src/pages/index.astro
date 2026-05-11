@@ -1,5 +1,5 @@
 ---
-import {Image} from "astro:assets"
+import {Image, Picture} from "astro:assets"
 import Layout from "../layouts/Layout.astro"
 const nombre = "Jose"
 import image from "../assets/bg_home.jpg"
@@ -11,4 +11,5 @@ import image from "../assets/bg_home.jpg"
     <a href="/nosotros">Ir a nosotros</a>
     <img src={image.src}/>
     <Image src={image} format="avif" alt="Imagen BG"/>
+    <Picture src={image} alt="" formats={["avif", "webp"]}/>
 </Layout>
