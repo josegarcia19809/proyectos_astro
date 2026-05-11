@@ -1,10 +1,10 @@
 Del curso: Headless WordPress - Astro WP REST API Tailwind TypeScript
 Aprendiendo Astro y Headless WordPress desde Cero con Proyectos, inc. Actions, Server Endpoints, Autenticación, React y Vue
 
-Coffee Shop Astro: Assets y Public ¿Donde colocar las imágenes en Astro?
+Coffee Shop Astro: El Componente Image de Astro
 
 
 5:27
-El Componente Image de Astro
+
 5:34
 El Componente Picture de Astro
