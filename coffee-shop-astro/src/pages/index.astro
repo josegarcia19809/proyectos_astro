@@ -1,6 +1,11 @@
 ---
-import "../styles/global.css"
+
+import Layout from "../layouts/Layout.astro"
 const nombre = "Jose"
 ---
-<h1 class="text-6xl">Hola Mundo en Astro {nombre}</h1>
-<a href="/nosotros">Ir a nosotros</a>
+
+<Layout>
+
+    <h1 class="text-6xl">Hola Mundo en Astro {nombre}</h1>
+    <a href="/nosotros">Ir a nosotros</a>
+</Layout>
