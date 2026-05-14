@@ -1,9 +1,137 @@
 Del curso: Headless WordPress - Astro WP REST API Tailwind TypeScript
 Aprendiendo Astro y Headless WordPress desde Cero con Proyectos, inc. Actions, Server Endpoints, Autenticación, React y Vue
 
-Coffee Shop Astro: El Componente Picture de Astro
+Coffee Shop Astro: Creando el Proyecto de Cafetería
 
 
-5:27
+Creando el Header del Proyecto
+4 clases • 20 min
 
-5:34
+Creando la Sección Principal
+2 clases • 9 min
+
+Creando el Footer
+2 clases • 12 min
+
+Añadiendo Contenido a la Página de Inicio
+3 clases • 18 min
+
+Windows - Ambiente de Desarrollo: Local y Herd
+5 clases • 21 min
+
+Mac - Ambiente de Desarrollo: Local
+2 clases • 8 min
+
+Primeros Pasos WordPress y Astro
+6 clases • 29 min
+
+Primeros Pasos WP REST API + Astro
+6 clases • 30 min
+
+Creando Campos Personalizados en la WP REST API
+5 clases • 30 min
+
+Creando la Página de Proceso de Café
+8 clases • 36 min
+
+Creando un Blog en WP REST API y Astro
+10 clases • 43 min
+
+Routing dinámico en Astro con SSR
+8 clases • 34 min
+
+Routing Dinámico en Astro con SSG
+6 clases • 25 min
+
+Creando la Página de Galería
+6 clases • 30 min
+
+Sección de Menú de la Cafeteria
+13 clases • 49 min
+
+Página de Contacto de CoffeeShop - Mapa de Ubicación
+7 clases • 33 min
+
+Página de Contacto de CoffeeShop - Envío de Emails con Astro Actions
+10 clases • 47 min
+
+Finalizando el Proyecto
+4 clases • 18 min
+
+Deployment CoffeeShop en Hostinger y Netlify
+2 clases • 15 min
+
+Segundo Proyecto - Quiosco de Comida y Pedidos con Panel de Administración
+3 clases • 6 min
+
+Creando los Productos para el Quiosco
+7 clases • 30 min
+
+Creando el Proyecto con Astro y Primeros Pasos
+3 clases • 8 min
+
+Quisco de Ordenes - Layout de Ordenes y Categorías
+6 clases • 27 min
+
+Mostrando los Productos en el Quiosco
+15 clases • 1 h 19 min
+
+Zustand para Estado Global en nuestra app
+3 clases • 16 min
+
+Creando el Panel para Realizar Pedidos
+6 clases • 28 min
+
+Panel para realizar pedidos: Guardar Productos Variables y Evitar Duplicados
+4 clases • 19 min
+
+Panel para realizar pedidos: Eliminar y Actualizar Cantidades
+3 clases • 10 min
+
+Panel para realizar pedidos: Mostrar Tamaño y Cambiarlo en Productos Variables
+7 clases • 41 min
+
+Panel para realizar pedidos: Ajustes Finales
+2 clases • 8 min
+
+Autenticación y Roles en WordPress y WP REST API
+4 clases • 17 min
+
+Autenticación por JSON Web Tokens en WP REST API
+4 clases • 16 min
+
+Autenticando Usuarios en Astro
+6 clases • 32 min
+
+Almacenar las Ordenes de los Clientes
+8 clases • 41 min
+
+Panel de Administración - Primeros Pasos
+10 clases • 43 min
+
+Panel de Administración - Administrar las Ordenes de Clientes
+14 clases • 1 h 26 min
+
+Mostrando las Ordenes Listas
+3 clases • 21 min
+
+Panel de Administración - Mostrando Tabla de Productos
+5 clases • 19 min
+
+Panel de Administración - Paginación de Productos
+8 clases • 27 min
+
+Panel de Administración - Filtrar Productos por Categoría
+2 clases • 11 min
+
+Panel de Administración - Creación de Productos
+14 clases • 1 h 14 min
+
+Panel de Administración - Editar Productos
+6 clases • 33 min
+
+Panel de Administración - Eliminar Productos
+3 clases • 15 min
+
+Deployment FreshCoffee Hostinger y Netlify
+2 clases • 11 min
