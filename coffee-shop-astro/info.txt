@@ -1,11 +1,8 @@
 Del curso: Headless WordPress - Astro WP REST API Tailwind TypeScript
 Aprendiendo Astro y Headless WordPress desde Cero con Proyectos, inc. Actions, Server Endpoints, Autenticación, React y Vue
 
-Coffee Shop Astro: Creando el Proyecto de Cafetería
+Coffee Shop Astro: Creando el Header del Proyecto
 
-
-Creando el Header del Proyecto
-4 clases • 20 min
 
 Creando la Sección Principal
 2 clases • 9 min
