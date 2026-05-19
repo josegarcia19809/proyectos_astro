@@ -1,17 +1,8 @@
 Del curso: Headless WordPress - Astro WP REST API Tailwind TypeScript
 Aprendiendo Astro y Headless WordPress desde Cero con Proyectos, inc. Actions, Server Endpoints, Autenticación, React y Vue
 
-Coffee Shop Astro: Añadiendo Contenido a la Página de Inicio
+Coffee Shop Astro: Primeros Pasos WP REST API + Astro
 
-
-Mac - Ambiente de Desarrollo: Local
-2 clases • 8 min
-
-Primeros Pasos WordPress y Astro
-6 clases • 29 min
-
-Primeros Pasos WP REST API + Astro
-6 clases • 30 min
 
 Creando Campos Personalizados en la WP REST API
 5 clases • 30 min
