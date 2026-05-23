@@ -28,3 +28,15 @@ export const BaseWPSchema = z.object({
         subtitle: z.string(),
     }),
 })
+
+export const processSchema = z.object({
+    title: z.string(),
+    description: z.string(),
+    image: z.string(),
+})
+
+export const processPageSchema = BaseWPSchema.extend({
+    acf: z.object({
+        subtitle: z.string(),
+    }).catchall(processSchema),
+})
