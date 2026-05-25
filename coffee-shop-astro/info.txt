@@ -1,17 +1,8 @@
 Del curso: Headless WordPress - Astro WP REST API Tailwind TypeScript
 Aprendiendo Astro y Headless WordPress desde Cero con Proyectos, inc. Actions, Server Endpoints, Autenticación, React y Vue
 
-Coffee Shop Astro: Creando la Página de Proceso de Café
+Coffee Shop Astro: Creando un Blog en WP REST API y Astro
 
-
-
-5 clases • 30 min
-
-
-8 clases • 36 min
-
-Creando un Blog en WP REST API y Astro
-10 clases • 43 min
 
 Routing dinámico en Astro con SSR
 8 clases • 34 min
