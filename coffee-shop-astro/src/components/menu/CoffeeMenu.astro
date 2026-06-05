@@ -1,0 +1,37 @@
+---
+import {MenuItemsSchema} from "@/types";
+import MenuItem from "@/components/menu/MenuItem.astro";
+const url = `${import.meta.env.API_URL}/products?product_categories=5`
+const response = await fetch(url);
+const json = await response.json();
+const data = MenuItemsSchema.parse(json);
+
+---
+<div>
+    <h4 class="text-white font-black text-4xl uppercase text-center my-10">Café</h4>
+    <ul id="coffee-menu" class="space-y-3">
+        {data.map((item, index) => (
+                <MenuItem
+                        title={item.title.rendered}
+                        description={item.acf.description}
+                        price={item.acf.price}
+                        image={item.featured_images}
+                />
+        ))}
+    </ul>
+</div>
+
+<script>
+    import PhotoSwipeLightbox from 'photoswipe/lightbox'
+    import 'photoswipe/style.css'
+
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '#coffee-menu',
+        children: 'a',
+        pswpModule: () => import('photoswipe')
+    })
+    lightbox.init()
+    document.addEventListener('astro:after-swap', function() {
+        lightbox.init()
+    })
+</script>

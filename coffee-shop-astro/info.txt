@@ -1,11 +1,8 @@
 Del curso: Headless WordPress - Astro WP REST API Tailwind TypeScript
 Aprendiendo Astro y Headless WordPress desde Cero con Proyectos, inc. Actions, Server Endpoints, Autenticación, React y Vue
 
-Coffee Shop Astro: Creando la Página de Galería
+Coffee Shop Astro: Sección de Menú de la Cafeteria
 
-
-Sección de Menú de la Cafeteria
-13 clases • 49 min
 
 Página de Contacto de CoffeeShop - Mapa de Ubicación
 7 clases • 33 min
