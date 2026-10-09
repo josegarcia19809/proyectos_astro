@@ -1,0 +1,39 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Inicio">
+    <section
+            class="grid items-center gap-10 rounded-2xl bg-gray-100 p-8
+            md:grid-cols-2 md:p-14"
+    >
+        <div>
+            <p class="font-bold uppercase tracking-widest text-orange-600">
+                Tu música comienza aquí
+            </p>
+
+            <h1 class="mt-4 text-4xl font-black sm:text-6xl">
+                Encuentra la guitarra perfecta
+            </h1>
+
+            <p class="mt-5 leading-7 text-gray-600">
+                Descubre instrumentos para practicar, componer
+                y subir al escenario.
+            </p>
+
+            <a
+                    href="/guitarras"
+                    class="mt-7 inline-block rounded-lg bg-orange-600 px-6 py-3 font-bold
+				text-white hover:bg-orange-700"
+            >
+                Explorar guitarras
+            </a>
+        </div>
+
+        <img
+                src="/images/guitarra_01.jpg"
+                alt="Guitarra destacada de GuitarLA"
+                class="mx-auto h-80 w-full object-contain"
+        />
+    </section>
+</MainLayout>

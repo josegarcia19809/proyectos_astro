@@ -1,0 +1,54 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import GuitarCard from "../components/GuitarCard.astro";
+
+const guitarras = [
+    {
+        nombre: "Lukather",
+        precio: 8500,
+        imagen: "/images/guitarra_01.jpg",
+        descripcion: "Guitarra eléctrica versátil para tocar rock y blues."
+    },
+    {
+        nombre: "SRV",
+        precio: 9200,
+        imagen: "/images/guitarra_02.jpg",
+        descripcion: "Un sonido expresivo ideal para blues y solos."
+    },
+    {
+        nombre: "Borland",
+        precio: 7800,
+        imagen: "/images/guitarra_03.jpg",
+        descripcion: "Una guitarra diseñada para sonidos potentes."
+    },
+    {
+        nombre: "Vai",
+        precio: 11500,
+        imagen: "/images/guitarra_04.jpg",
+        descripcion: "Ideal para experimentar con sonidos y efectos."
+    }
+];
+---
+
+<MainLayout title="Colección de guitarras">
+    <section>
+        <div class="mb-10 text-center">
+            <p class="font-bold uppercase tracking-widest text-orange-600">
+                Encuentra tu sonido
+            </p>
+            <h1 class="mt-2 text-4xl font-black sm:text-5xl">
+                Nuestra colección
+            </h1>
+            <p class="mx-auto mt-4 max-w-2xl text-gray-600">
+                Explora guitarras para principiantes, músicos
+                experimentados y amantes del rock.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {guitarras.map((guitarra) => (
+                    <GuitarCard {...guitarra}/>
+            ))}
+        </div>
+    </section>
+</MainLayout>
