@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+
+@theme {
+    --font-lora: "Lora", serif;
+    --font-playwrite: "Playwrite AR", cursive;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
