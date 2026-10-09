@@ -1,26 +1,98 @@
-<header class="border-b border-gray-200">
-    <div
-            class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5
-            px-6 py-5 sm:flex-row"
-    >
-        <a href="/" class="text-3xl font-black tracking-tight">
-            Guitar<span class="text-orange-600">LA</span>
-        </a>
 
-        <nav class="flex flex-wrap justify-center gap-5 text-sm font-semibold">
-            <a href="/" class="hover:text-orange-600">Inicio</a>
-            <a href="/guitarras" class="hover:text-orange-600">Guitarras</a>
-            <a href="/nosotros" class="hover:text-orange-600">Nosotros</a>
-            <a href="/contacto" class="hover:text-orange-600">Contacto</a>
+<header class="border-b border-gray-200 bg-white relative z-50">
+    <div class="mx-auto max-w-7xl px-6 py-5">
+
+        <!-- Encabezado -->
+        <div class="flex items-center justify-between">
+            <a href="/" class="text-3xl font-black tracking-tight">
+                Guitar<span class="text-orange-600">LA</span>
+            </a>
+
+            <!-- Hamburguesa: solo móvil -->
+            <button
+                    id="menu-button"
+                    type="button"
+                    class="text-3xl leading-none md:hidden"
+                    aria-label="Abrir menú"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+            >
+                ☰
+            </button>
+
+            <!-- Menú de escritorio -->
+            <nav class="hidden items-center gap-6 text-sm font-semibold md:flex">
+                <a href="/" class="hover:text-orange-600">Inicio</a>
+                <a href="/guitarras" class="hover:text-orange-600">Guitarras</a>
+                <a href="/nosotros" class="hover:text-orange-600">Nosotros</a>
+                <a href="/contacto" class="hover:text-orange-600">Contacto</a>
+
+                <a
+                        href="/guitarras"
+                        class="whitespace-nowrap rounded-lg bg-orange-600 px-4 py-3 text-white hover:bg-orange-700"
+                >
+                    🛒 Ver catálogo
+                </a>
+            </nav>
+        </div>
+
+        <!-- Menú móvil desplegable hacia abajo -->
+        <nav
+                id="mobile-menu"
+                class="grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out md:hidden"
+                aria-hidden="true"
+                inert
+        >
+            <div class="overflow-hidden">
+                <div class="flex flex-col gap-1 border-t border-gray-200 pt-3 mt-4">
+                    <a href="/" class="rounded-lg px-4 py-3 hover:bg-gray-100">
+                        Inicio
+                    </a>
+                    <a href="/guitarras" class="rounded-lg px-4 py-3 hover:bg-gray-100">
+                        Guitarras
+                    </a>
+                    <a href="/nosotros" class="rounded-lg px-4 py-3 hover:bg-gray-100">
+                        Nosotros
+                    </a>
+                    <a href="/contacto" class="rounded-lg px-4 py-3 hover:bg-gray-100">
+                        Contacto
+                    </a>
+
+                    <a
+                            href="/guitarras"
+                            class="mt-2 rounded-lg bg-orange-600 px-4 py-3 text-center font-bold text-white hover:bg-orange-700"
+                    >
+                        🛒 Ver catálogo
+                    </a>
+                </div>
+            </div>
         </nav>
 
-        <a
-                href="/guitarras"
-                aria-label="Ver catálogo de guitarras"
-                class="rounded-lg bg-orange-600 px-4 py-3 text-sm font-bold
-                text-white hover:bg-orange-700"
-        >
-            🛒 Ver catálogo
-        </a>
     </div>
 </header>
+
+<script>
+    const button = document.querySelector("#menu-button");
+    const menu = document.querySelector("#mobile-menu");
+
+    button?.addEventListener("click", () => {
+        if (!menu) return;
+
+        const abierto = button.getAttribute("aria-expanded") !== "true";
+
+        button.setAttribute("aria-expanded", String(abierto));
+        button.setAttribute(
+            "aria-label",
+            abierto ? "Cerrar menú" : "Abrir menú"
+        );
+        button.textContent = abierto ? "✕" : "☰";
+
+        menu.setAttribute("aria-hidden", String(!abierto));
+        menu.toggleAttribute("inert", !abierto);
+
+        menu.classList.toggle("grid-rows-[0fr]", !abierto);
+        menu.classList.toggle("grid-rows-[1fr]", abierto);
+        menu.classList.toggle("opacity-0", !abierto);
+        menu.classList.toggle("opacity-100", abierto);
+    });
+</script>
