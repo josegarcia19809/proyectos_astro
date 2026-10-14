@@ -1,0 +1,40 @@
+
+---
+interface Autor {
+  id: number;
+  nombre: string;
+  apellido: string;
+}
+
+const respuesta = await fetch(
+  "http://127.0.0.1:8000/api/autores"
+);
+
+if (!respuesta.ok) {
+  throw new Error("No se pudieron recuperar los autores");
+}
+
+const autores: Autor[] = await respuesta.json();
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Biblioteca</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>📚 Catálogo de autores</h1>
+
+      <ul>
+        {autores.map((autor: Autor) => (
+          <li>
+            <strong>{autor.nombre} {autor.apellido}</strong>
+            (ID: {autor.id})
+          </li>
+        ))}
+      </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+
+---
+interface Videojuego {
+  id: number;
+  nombre: string;
+  plataforma: string;
+}
+
+const respuesta = await fetch(
+  "http://127.0.0.1:8000/api/videojuegos"
+);
+
+const videojuegos: Videojuego[] = await respuesta.json();
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mis videojuegos</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>🎮 Mi colección de videojuegos</h1>
+
+      <ul>
+        {videojuegos.map((juego: Videojuego) => (
+          <li>
+            <strong>{juego.nombre}</strong>
+            — {juego.plataforma}
+          </li>
+        ))}
+      </ul>
+    </main>
+  </body>
+</html>
