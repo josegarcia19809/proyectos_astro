@@ -1,0 +1,51 @@
+---
+interface Producto {
+    id: number;
+    nombre: string;
+    material: string;
+    precio: number;
+    existencias: number;
+}
+
+const respuesta: Response = await fetch(
+    "http://localhost:8000/api/productos"
+);
+
+const productos: Producto[] = await respuesta.json();
+---
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Productos de la carpintería</title>
+</head>
+
+<body>
+<h1>Productos de la carpintería</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Material</th>
+        <th>Precio</th>
+        <th>Existencias</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {productos.map((producto: Producto) => (
+            <tr>
+                <td>{producto.id}</td>
+                <td>{producto.nombre}</td>
+                <td>{producto.material}</td>
+                <td>{producto.precio}</td>
+                <td>{producto.existencias}</td>
+            </tr>
+    ))}
+    </tbody>
+</table>
+</body>
+</html>
